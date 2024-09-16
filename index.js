@@ -1,3 +1,5 @@
+window.history.pushState("nil”, “Title”, “Url Spoof”);  
+
 document.getElementById('EaglerCraft 1.8').onclick = function() {
     window.open('https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html', '_blank');
 }
