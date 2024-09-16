@@ -7,3 +7,6 @@ document.getElementById('EaglerCraft 1.5').onclick = function() {
 document.getElementById('UwUClient').onclick = function() {
     window.open('https://file.io/LH7KvmOYouZT', '_blank');
 }
+document.getElementById('impquiz').onclick = function() {
+    window.open('https://impossible-quiz-zeta.vercel.app/', '_blank');
+}
