@@ -1,4 +1,4 @@
-if (window.confirm("This Is By Jude And Ian")){
+if (window.prompt("Enter Password: ","Nil") == "Pizzarolls123") {
     document.getElementById('EaglerCraft 1.8').onclick = function() {
         window.open('https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html', '_blank');
     }
@@ -21,5 +21,5 @@ if (window.confirm("This Is By Jude And Ian")){
         window.open('https://unfair-mario-eeic.vercel.app/', '_blank');
     }
 } else{
-    window.history.back() // They shouldnt be allowed here if they dont know who its made by
+    window.history.back() // brahman
 }
