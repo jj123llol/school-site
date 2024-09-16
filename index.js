@@ -26,5 +26,6 @@ if (window.prompt("Enter Password: ","") == "Pizzarolls123") {
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
     }
-    document.body.appendChild(savednode);
+    document.body.appendChild(saved);
+    saved.text = "Wrong!"
 }
