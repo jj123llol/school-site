@@ -21,5 +21,5 @@ if (window.confirm("This Is By Jude And Ian")){
         window.open('https://unfair-mario-eeic.vercel.app/', '_blank');
     }
 } else{
-    window.history.back()
+    window.history.back() // They shouldnt be allowed here if they dont know who its made by
 }
