@@ -21,11 +21,8 @@ if (window.prompt("Enter Password: ","") == "Pizzarolls123") {
         window.open('https://unfair-mario-eeic.vercel.app/', '_blank');
     }
 } else{
-    var saved = document.getElementById('sch');
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
     }
     window.alert("Incorrect Password!")
-    document.body.appendChild(saved);
-    saved.text = "Wrong!"
 }
