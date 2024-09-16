@@ -22,7 +22,6 @@ if (window.prompt("Enter Password: ","") == "Pizzarolls123") {
     }
 } else{
     var saved = document.getElementById('sch');
-    savednode = saved.ParentNode.removeChild(saved);
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
     }
