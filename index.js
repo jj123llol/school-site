@@ -10,3 +10,12 @@ document.getElementById('UwUClient').onclick = function() {
 document.getElementById('impquiz').onclick = function() {
     window.open('https://impossible-quiz-zeta.vercel.app/', '_blank');
 }
+document.getElementById('impquiz2').onclick = function() {
+    window.open('https://impossible-quiz-e.vercel.app/', '_blank');
+}
+document.getElementById('impquiz3').onclick = function() {
+    window.open('https://impossible-quiz-e-git-main-broplsss.vercel.app/', '_blank');
+}
+document.getElementById('unfair').onclick = function() {
+    window.open('https://unfair-mario-eeic.vercel.app/', '_blank');
+}
