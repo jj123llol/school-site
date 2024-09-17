@@ -6,7 +6,7 @@ function loadlinks(){
         window.open('https://jj123llol.github.io/school-site/minecraft%201.5.2.html', '_blank');
     }
     document.getElementById('UwUClient').onclick = function() {
-        window.open('https://file.io/LH7KvmOYouZT', '_blank');
+        window.open('https://github.com/jj123llol/school-site/releases/download/release/uwuclient.html', '_blank');
     }
     document.getElementById('impquiz').onclick = function() {
         window.open('https://impossible-quiz-zeta.vercel.app/', '_blank');
