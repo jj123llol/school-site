@@ -1,14 +1,13 @@
-var savedpasswords = [
-    normalpasswords = [],
-    devpasswords = []
-]
+var normalpasswords = [],
+var devpasswords = []
+
 
 function MakeNormalPassword(password){
-    savedpasswords.normalpasswords.push(password)
+    normalpasswords.push(password)
 }
 
 function MakeDevPassword(password){
-    savedpasswords.devpasswords.push(password)
+    devpasswords.push(password)
 }
 
 /*
@@ -26,15 +25,15 @@ var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
     var tempnumber = 0
-    while (tempnumber < savedpasswords.devpasswords.length){
-        if(pass == savedpasswords.devpasswords[tempnumber]){
+    while (tempnumber < devpasswords.length){
+        if(pass == devpasswords[tempnumber]){
             return "dev"
         }
         tempnumber = tempnumber + 1
     }
     tempnumber = 0
-    while (tempnumber < savedpasswords.normalpasswords.length){
-        if(pass == savedpasswords.normalpasswords[tempnumber]){
+    while (tempnumber < normalpasswords.length){
+        if(pass == normalpasswords[tempnumber]){
             return "normal user"
         }
         tempnumber = tempnumber + 1
