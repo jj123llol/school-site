@@ -67,17 +67,16 @@ function loadlinks(){
         window.open('https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0', '_blank');
     }
     document.getElementById('test').onclick = function() {
-        var w = window.open()
-        var doucumentbody = w.document.body
-        doucumentbody.style.margin = '0';
-        doucumentbody.style.height = '100vh';
+        const w = window.open()
+        w.document.body.style.margin = '0';
+        w.document.body.style.height = '100vh';
         var iframe = win.document.createElement('iframe');
         iframe.style.border = 'none';
         iframe.style.width = '100%';
         iframe.style.height = '100%';
         iframe.style.margin = '0';
         iframe.src = 'https://rbeesley.github.io/MicrosoftEdge-SURF/'
-        doucumentbody.appendChild(iframe);
+        w.document.body.appendChild(iframe);
     }
 }
 
