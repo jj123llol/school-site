@@ -78,6 +78,8 @@ function loadlinks(){
 
     addfunctionality('EdgeSurf','https://rbeesley.github.io/MicrosoftEdge-SURF/')
 
+    addfunctionality('pumpfren','https://drive.google.com/uc?export=download&id=1KotOq5xHEVSZ-aJmZxMBtj7t8Czl8o6M')
+
     addfunctionality('TOR','https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0')
 }
 
