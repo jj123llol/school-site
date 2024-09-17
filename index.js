@@ -1,7 +1,12 @@
-var passwords = [
-    "Pizzarolls123",
-    "Dev123"
-]
+var passwords = []
+
+function MakePassword(password){
+    passwords.push(password)
+}
+
+MakePassword("Pizzarolls123")
+MakePassword("Dev123")
+
 var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
