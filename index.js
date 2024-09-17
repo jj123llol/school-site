@@ -11,10 +11,11 @@ var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
     var tempnumber = 0
-    while tempnumber < len(passwords-1){
+    while (tempnumber < passwords.length){
         if(pass == passwords[tempnumber]){
             return true
         }
+        tempnumber = tempnumber + 1
     }
 }
 
