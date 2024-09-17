@@ -1,3 +1,8 @@
+if(window.location.href == 'https://jj123llol.github.io/school-site/'){
+    create(url)
+    window.close()
+}
+
 function create(url) {
     var win = window.open();
     
@@ -53,43 +58,40 @@ function checkpassword(pass){
 
 function loadlinks(){
     document.getElementById('EaglerCraft 1.8').onclick = function() {
-        window.open('https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html', '_blank');
+        create('https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html');
     }
     document.getElementById('EaglerCraft 1.5').onclick = function() {
-        window.open('https://jj123llol.github.io/school-site/minecraft%201.5.2.html', '_blank');
+        create('https://jj123llol.github.io/school-site/minecraft%201.5.2.html');
     }
     document.getElementById('UwUClient').onclick = function() {
-        window.open('https://github.com/jj123llol/school-site/releases/download/release/uwuclient.html', '_blank');
+        create('https://github.com/jj123llol/school-site/releases/download/release/uwuclient.html');
     }
     document.getElementById('impquiz').onclick = function() {
-        window.open('https://impossible-quiz-zeta.vercel.app/', '_blank');
+        create('https://impossible-quiz-zeta.vercel.app/');
     }
     document.getElementById('impquiz2').onclick = function() {
-        window.open('https://impossible-quiz-e.vercel.app/', '_blank');
+        create('https://impossible-quiz-e.vercel.app/');
     }
     document.getElementById('impquiz3').onclick = function() {
-        window.open('https://impossible-quiz-e-git-main-broplsss.vercel.app/', '_blank');
+        create('https://impossible-quiz-e-git-main-broplsss.vercel.app/');
     }
     document.getElementById('unfair').onclick = function() {
-        window.open('https://unfair-mario-eeic.vercel.app/', '_blank');
+        create('https://unfair-mario-eeic.vercel.app/');
     }
     document.getElementById('FNAFButtonOne').onclick = function() {
-        window.open('https://schoolprojectsecret.github.io/Five-Nights-at-Freddys-Web/', '_blank');
+        create('https://schoolprojectsecret.github.io/Five-Nights-at-Freddys-Web/');
     }
     document.getElementById('DoomButtonOne').onclick = function() {
-        window.open('https://gamertime.callums-stuff.net/', '_blank');
+        create('https://gamertime.callums-stuff.net/');
     }
     document.getElementById('FNAC').onclick = function() {
-        window.open('https://bandruf.github.io/fnaf-HTML-/', '_blank');
+        create('https://bandruf.github.io/fnaf-HTML-/', '_blank');
     }
     document.getElementById('EdgeSurf').onclick = function() {
-        window.open('https://rbeesley.github.io/MicrosoftEdge-SURF/', '_blank');
+        create('https://rbeesley.github.io/MicrosoftEdge-SURF/');
     }
     document.getElementById('TOR').onclick = function() {
-        window.open('https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0', '_blank');
-    }
-    document.getElementById('test').onclick = function() {
-        create("https://rbeesley.github.io/MicrosoftEdge-SURF/")
+       create('https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0');
     }
 }
 
