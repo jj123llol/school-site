@@ -61,11 +61,7 @@ function loadlinks(){
     addfunctionality('EaglerCraft 1.8','https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html')
     
     addfunctionality('EaglerCraft 1.5','https://jj123llol.github.io/school-site/minecraft%201.5.2.html')
-
-    document.getElementById('UWUClient').onclick = function() {
-        window.open('https://github.com/jj123llol/school-site/releases/download/release/uwuclient.html', '_blank');
-    }
-
+    
     addfunctionality('impquiz','https://impossible-quiz-zeta.vercel.app/')
 
     addfunctionality('impquiz2','https://impossible-quiz-e.vercel.app/')
