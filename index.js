@@ -1,4 +1,19 @@
-if (window.prompt("Enter Password: ","") == "Pizzarolls123") {
+var passwords = [
+    "Pizzarolls123",
+    "Dev123"
+]
+var enteredpassword = window.prompt("Enter Password: ","")
+
+function checkpassword(pass){
+    var tempnumber = 0
+    while tempnumber < len(passwords-1){
+        if(pass == passwords[tempnumber]){
+            return true
+        }
+    }
+}
+
+if (checkpassword(enteredpassword)) {
     document.getElementById('EaglerCraft 1.8').onclick = function() {
         window.open('https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html', '_blank');
     }
