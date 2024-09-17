@@ -4,6 +4,14 @@ function MakePassword(password){
     passwords.push(password)
 }
 
+/*
+
+Feel Free To Add Your Own Passwords, Might Make A Login System With Saved Usernames And Passwords Later, Maybe Even A ChatRoom.
+
+For Now Passwords Are Just So Random People Cant Get In
+
+*/
+
 MakePassword("Pizzarolls123")
 MakePassword("Dev123")
 
