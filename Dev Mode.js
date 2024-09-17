@@ -23,7 +23,7 @@ function loadlinks(){
 }
 
 
-if (window.prompt("Enter Password: ","") == "5476") {
+if (window.prompt("Enter Pin: ","") == "5476") {
     loadlinks()
 } else {
   window.location.replace("https://jj123llol.github.io/school-site/index.html")
