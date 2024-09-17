@@ -1,4 +1,4 @@
-normalpasswords = [],
+normalpasswords = []
 devpasswords = []
 
 
