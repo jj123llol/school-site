@@ -63,6 +63,9 @@ function loadlinks(){
     document.getElementById('EdgeSurf').onclick = function() {
         window.open('https://rbeesley.github.io/MicrosoftEdge-SURF/', '_blank');
     }
+    document.getElementById('TOR').onclick = function() {
+        window.open('https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0', '_blank');
+    }
 }
 
 returned = checkpassword(enteredpassword)
