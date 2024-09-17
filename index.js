@@ -57,6 +57,9 @@ function loadlinks(){
     document.getElementById('DoomButtonOne').onclick = function() {
         window.open('https://gamertime.callums-stuff.net/', '_blank');
     }
+    document.getElementById('Fnac').onclick = function() {
+        window.open('https://bandruf.github.io/fnaf-HTML-/', '_blank');
+    }
 }
 
 returned = checkpassword(enteredpassword)
