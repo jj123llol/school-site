@@ -1,9 +1,3 @@
-function addfunctionality(button,link){
-    document.getElementById(button).onclick = function() {
-        create(link);
-    }
-}
-
 function create(url) {
     var win = window.open();
     
@@ -24,6 +18,12 @@ function create(url) {
     iframe.src = url;
     
     win.document.body.appendChild(iframe);
+}
+
+function addfunctionality(button,link){
+    document.getElementById(button).onclick = function() {
+        create(link);
+    }
 }
 
 if(window.location.href == 'https://jj123llol.github.io/school-site/'){
