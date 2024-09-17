@@ -7,7 +7,7 @@ body {
     height: max(90vh, 650px);
 }
 
-.minecraftheader {
+.linkSection {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.25);
     width: auto;
