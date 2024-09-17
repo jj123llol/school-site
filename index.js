@@ -54,6 +54,9 @@ function loadlinks(){
     document.getElementById('FNAFButtonOne').onclick = function() {
         window.open('https://schoolprojectsecret.github.io/Five-Nights-at-Freddys-Web/', '_blank');
     }
+    document.getElementById('DoomButtonOne').onclick = function() {
+        window.open('https://gamertime.callums-stuff.net/', '_blank');
+    }
 }
 
 returned = checkpassword(enteredpassword)
