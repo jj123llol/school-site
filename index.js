@@ -8,7 +8,7 @@ function MakePassword(password){
 
 Feel Free To Add Your Own Passwords, Might Make A Login System With Saved Usernames And Passwords Later, Maybe Even A ChatRoom.
 
-For Now Passwords Are Just So Random People Cant Get In
+For Now Passwords Are Just So Random People Cant Get In   ( I Doubt Anyone At Our School Is Smart Enough To Look At The Source. )
 
 */
 
