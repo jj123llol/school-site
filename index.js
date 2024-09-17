@@ -26,12 +26,6 @@ function addfunctionality(button,link){
     }
 }
 
-if(window.location.href == 'https://jj123llol.github.io/school-site/'){
-    create(url)
-    window.close()
-}
-
-
 var normalPasswords = []
 
 function MakePassword(password){
