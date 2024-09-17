@@ -68,17 +68,16 @@ function loadlinks(){
     }
     document.getElementById('test').onclick = function() {
         var w = window.open()
-        w.document.body.style.margin = '0';
-        w.document.body.style.height = '100vh';
-        var header = win.document.createElement("Header")
-        header.innerHTML = "hi"
+        var doucumentbody = w.document.body
+        doucumentbody.style.margin = '0';
+        doucumentbody.style.height = '100vh';
         var iframe = win.document.createElement('iframe');
         iframe.style.border = 'none';
         iframe.style.width = '100%';
         iframe.style.height = '100%';
         iframe.style.margin = '0';
         iframe.src = 'https://rbeesley.github.io/MicrosoftEdge-SURF/'
-        win.document.body.appendChild(iframe);
+        doucumentbody.appendChild(iframe);
     }
 }
 
