@@ -1,7 +1,14 @@
-var passwords = []
+var savedpasswords = [
+    normalpasswords = [],
+    devpasswords = []
+]
 
-function MakePassword(password){
-    passwords.push(password)
+function MakeNormalPassword(password){
+    savedpasswords.normalpasswords.push(password)
+}
+
+function MakeDevPassword(password){
+    savedpasswords.devpasswords.push(password)
 }
 
 /*
@@ -12,22 +19,30 @@ For Now Passwords Are Just So Random People Cant Get In   ( I Doubt Anyone At Ou
 
 */
 
-MakePassword("Pizzarolls123")
-MakePassword("Dev123")
+MakeNormalPassword("Pizzarolls123")
+MakeDevPassword("Dev123")
 
 var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
     var tempnumber = 0
-    while (tempnumber < passwords.length){
-        if(pass == passwords[tempnumber]){
-            return true
+    while (tempnumber < savedpasswords.devpasswords.length){
+        if(pass == savedpasswords.devpasswords[tempnumber]){
+            return "dev"
+        }
+        tempnumber = tempnumber + 1
+    }
+    tempnumber = 0
+    while (tempnumber < savedpasswords.normalpasswords.length){
+        if(pass == savedpasswords.normalpasswords[tempnumber]){
+            return "normal user"
         }
         tempnumber = tempnumber + 1
     }
 }
 
-if (checkpassword(enteredpassword)) {
+
+function loadlinks(){
     document.getElementById('EaglerCraft 1.8').onclick = function() {
         window.open('https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html', '_blank');
     }
@@ -49,7 +64,17 @@ if (checkpassword(enteredpassword)) {
     document.getElementById('unfair').onclick = function() {
         window.open('https://unfair-mario-eeic.vercel.app/', '_blank');
     }
-} else{
+}
+
+returned = checkpassword(enteredpassword)
+
+if (returned == "normal user") {
+    loadlinks()
+} else if (returned == "dev" {
+    loadlinks()
+    document.getElementById('sch').text = "Developer Mode Loaded."
+}
+else {
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
     }
