@@ -1,5 +1,27 @@
-var normalpasswords = []
+function create(url) {
+    var win = window.open();
+    
+    win.document.body.style.margin = '0';
 
+    win.document.body.style.height = '100vh';
+    
+    var iframe = win.document.createElement('iframe');
+    
+    iframe.style.border = 'none';
+    
+    iframe.style.width = '100%';
+    
+    iframe.style.height = '100%';
+    
+    iframe.style.margin = '0';
+    
+    iframe.src = url;
+    
+    win.document.body.appendChild(iframe);
+}
+
+
+var normalpasswords = []
 
 function MakePassword(password){
     normalpasswords.push(password)
@@ -67,16 +89,7 @@ function loadlinks(){
         window.open('https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0', '_blank');
     }
     document.getElementById('test').onclick = function() {
-        const w = window.open()
-        w.document.body.style.margin = '0';
-        w.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = 'https://rbeesley.github.io/MicrosoftEdge-SURF/'
-        w.document.body.appendChild(iframe);
+        create("https://rbeesley.github.io/MicrosoftEdge-SURF/")
     }
 }
 
