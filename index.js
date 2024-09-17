@@ -72,7 +72,7 @@ if (returned == "normal user") {
     loadlinks()
 } else if (returned == "dev" {
     loadlinks()
-    document.getElementById('sch').text = "Developer Mode Loaded."
+    document.getElementById('sch').innerHTML = "Developer Mode Loaded.";
 }
 else {
     while (document.body.firstChild) {
