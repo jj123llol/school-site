@@ -69,7 +69,7 @@ returned = checkpassword(enteredpassword)
 
 if (returned == "normal user") {
     loadlinks()
-} else if (returned == "dev" {
+} else if (returned == "dev") {
     loadlinks()
     document.getElementById('sch').innerHTML = "Developer Mode Loaded.";
 }else {
