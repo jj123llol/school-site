@@ -1,5 +1,5 @@
-var normalpasswords = [],
-var devpasswords = []
+normalpasswords = [],
+devpasswords = []
 
 
 function MakeNormalPassword(password){
