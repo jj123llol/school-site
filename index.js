@@ -20,6 +20,11 @@ function create(url) {
     win.document.body.appendChild(iframe);
 }
 
+if(window.location == 'https://jj123llol.github.io/school-site/'){
+    create(url)
+    window.close()
+}
+
 function addfunctionality(button,link){
     document.getElementById(button).onclick = function() {
         create(link);
