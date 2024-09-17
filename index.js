@@ -1,13 +1,8 @@
 var normalpasswords = []
-var devpasswords = []
 
 
-function MakeNormalPassword(password){
+function MakePassword(password){
     normalpasswords.push(password)
-}
-
-function MakeDevPassword(password){
-    devpasswords.push(password)
 }
 
 /*
@@ -18,20 +13,13 @@ For Now Passwords Are Just So Random People Cant Get In   ( I Doubt Anyone At Ou
 
 */
 
-MakeNormalPassword("Pizzarolls123")
-MakeDevPassword("Dev123")
+MakePassword("Pizzarolls123")
+
 
 var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
     var tempnumber = 0
-    while (tempnumber < devpasswords.length){
-        if(pass == devpasswords[tempnumber]){
-            return "dev"
-        }
-        tempnumber = tempnumber + 1
-    }
-    tempnumber = 0
     while (tempnumber < normalpasswords.length){
         if(pass == normalpasswords[tempnumber]){
             return "normal user"
@@ -69,9 +57,7 @@ returned = checkpassword(enteredpassword)
 
 if (returned == "normal user") {
     loadlinks()
-} else if (returned == "dev") {
-    window.location.replace("https://jj123llol.github.io/school-site/Dev%20Mode.html")
-}else {
+} else {
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
     }
