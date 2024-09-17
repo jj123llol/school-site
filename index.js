@@ -60,7 +60,7 @@ function loadlinks(){
     document.getElementById('FNAC').onclick = function() {
         window.open('https://bandruf.github.io/fnaf-HTML-/', '_blank');
     }
-        document.getElementById('EdgeSurf').onclick = function() {
+    document.getElementById('EdgeSurf').onclick = function() {
         window.open('https://rbeesley.github.io/MicrosoftEdge-SURF/', '_blank');
     }
 }
