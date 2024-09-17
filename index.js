@@ -70,7 +70,7 @@ returned = checkpassword(enteredpassword)
 if (returned == "normal user") {
     loadlinks()
 } else if (returned == "dev") {
-    window.location.replace("https://jj123llol.github.io/school-site/Dev Mode.html")
+    window.location.replace("https://jj123llol.github.io/school-site/Dev%20Mode.html")
 }else {
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
