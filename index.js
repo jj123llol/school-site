@@ -21,10 +21,10 @@ function create(url) {
 }
 
 
-var normalpasswords = []
+var normalPasswords = []
 
 function MakePassword(password){
-    normalpasswords.push(password)
+    normalPasswords.push(password)
 }
 
 /*
@@ -42,8 +42,8 @@ var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
     var tempnumber = 0
-    while (tempnumber < normalpasswords.length){
-        if(pass == normalpasswords[tempnumber]){
+    while (tempnumber < normalPasswords.length){
+        if(pass == normalPasswords[tempnumber]){
             return "normal user"
         }
         tempnumber = tempnumber + 1
