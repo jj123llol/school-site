@@ -51,6 +51,9 @@ function loadlinks(){
     document.getElementById('unfair').onclick = function() {
         window.open('https://unfair-mario-eeic.vercel.app/', '_blank');
     }
+    document.getElementById('FNAFButtonOne').onclick = function() {
+        window.open('https://schoolprojectsecret.github.io/Five-Nights-at-Freddys-Web/', '_blank');
+    }
 }
 
 returned = checkpassword(enteredpassword)
