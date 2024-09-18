@@ -47,7 +47,7 @@ var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
     for (let i = 0; i < normalPasswords.length; i++) {
-        if pass == normalPasswords[i]{
+        if (pass == normalPasswords[i]){
             return true
         }
     }
