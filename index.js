@@ -41,7 +41,7 @@ function randomstring(letters) {
 function create(url) {
     var win = window.open();
 
-    win.document.title = randomstring(10)
+    win.document.title = randomstring(20)
     
     win.document.body.style.margin = '0';
 
