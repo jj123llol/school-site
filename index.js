@@ -45,24 +45,31 @@ function create(url) {
       win.document.head.appendChild(link);
     }
     link.href = fakelink
-    
-    win.document.body.style.margin = '0';
 
-    win.document.body.style.height = '100vh';
+    loadingtext = win.document.createTextNode("Attempting To Connect..")
+    win.document.body.appendChild(loadingtext)
+
+    function load(){
+      win.document.body.removeChild(loadingtext)
+      win.document.body.style.margin = '0';
+
+      win.document.body.style.height = '100vh';
     
-    var iframe = win.document.createElement('iframe');
+      var iframe = win.document.createElement('iframe');
     
-    iframe.style.border = 'none';
+      iframe.style.border = 'none';
     
-    iframe.style.width = '100%';
+      iframe.style.width = '100%';
     
-    iframe.style.height = '100%';
+      iframe.style.height = '100%';
     
-    iframe.style.margin = '0';
+      iframe.style.margin = '0';
     
-    iframe.src = url;
+      iframe.src = url;
     
-    win.document.body.appendChild(iframe);
+      win.document.body.appendChild(iframe);
+    }
+    setTimeout(load,5000)
 }
 
 function addFunctionality(button,link){
