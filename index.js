@@ -27,6 +27,12 @@ function addfunctionality(button,link){
     }
 }
 
+function OpenPageFunctionality(button,link){
+    document.getElementById(button).onclick = function() {
+        window.open(link,'_blank');
+    }
+}
+
 var normalPasswords = []
 
 function MakePassword(password){
@@ -56,9 +62,9 @@ function checkpassword(pass){
 
 function loadlinks(){
 
-    addfunctionality('EaglerCraft 1.8','https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html')
+    OpenPageFunctionality('EaglerCraft 1.8','https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html')
     
-    addfunctionality('EaglerCraft 1.5','https://jj123llol.github.io/school-site/minecraft%201.5.2.html')
+    OpenPageFunctionality('EaglerCraft 1.5','https://jj123llol.github.io/school-site/minecraft%201.5.2.html')
     
     addfunctionality('impquiz','https://impossible-quiz-zeta.vercel.app/')
 
