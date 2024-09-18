@@ -20,6 +20,7 @@ function create(url) {
     win.document.body.appendChild(iframe);
 }
 
+
 function addfunctionality(button,link){
     document.getElementById(button).onclick = function() {
         create(link);
@@ -47,7 +48,7 @@ var enteredpassword = window.prompt("Enter Password: ","")
 function checkpassword(pass){
     for (let i = 0; i < normalPasswords.length; i++) {
         if pass == normalPasswords[i]{
-            return "normal user"
+            return true
         }
     }
 }
@@ -82,9 +83,7 @@ function loadlinks(){
     addfunctionality('TOR','https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0')
 }
 
-returned = checkpassword(enteredpassword)
-
-if (returned == "normal user") {
+if (checkpassword(enteredpassword)) {
     loadlinks()
 } else {
     while (document.body.firstChild) {
