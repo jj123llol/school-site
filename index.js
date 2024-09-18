@@ -30,8 +30,9 @@ var alphabet = [
 function randomstring(letters){
     var ind = 0
     var string = ""
-    while ind < int(letters){
+    while ind < letters{
         string = string + alphabet[(Math.floor(Math.random() * alphabet.length))]
+        ind = ind + 1
     }
     return string
 }
@@ -40,7 +41,7 @@ function randomstring(letters){
 function create(url) {
     var win = window.open();
 
-    win.document.title = "SDGJKRMSCIOSDJFOHELSDKGJ"
+    win.document.title = randomstring(10)
     
     win.document.body.style.margin = '0';
 
