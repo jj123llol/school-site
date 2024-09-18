@@ -131,6 +131,8 @@ function loadLinks(){
     addFunctionality('osu','https://drive.google.com/uc?export=download&id=1BNUjgY1yCBcWhgPBYz6fM7BBLFbqWIOr')
 
     addFunctionality('TOR','https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0')
+  
+    addFunctionality('spoof',window.prompt("Enter URL"))
 }
 
 if (checkPassword(enteredPassword)) {
