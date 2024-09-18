@@ -65,6 +65,11 @@ function create(url) {
     win.document.body.appendChild(iframe);
 }
 
+if (window.location == "https://jj123llol.github.io/school-site/"){
+	create("https://jj123llol.github.io/school-site/")
+  window.close()
+}
+
 function addFunctionality(button,link){
     document.getElementById(button).onclick = function() {
         create(link);
