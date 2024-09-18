@@ -27,14 +27,14 @@ var alphabet = [
   "Z",
 ];
 
-function randomstring(letters){
-    var ind = 0
-    var string = ""
-    while ind < letters{
-        string = string + alphabet[(Math.floor(Math.random() * alphabet.length))]
-        ind = ind + 1
-    }
-    return string
+function randomstring(letters) {
+  var indx = 0
+  var string = ""
+  while (indx < letters) {
+    string = string + alphabet[(Math.floor(Math.random() * alphabet.length))]
+    indx = indx + 1
+  }
+  return string
 }
     
 
