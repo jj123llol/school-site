@@ -40,19 +40,15 @@ For Now Passwords Are Just So Random People Cant Get In   ( I Doubt Anyone At Ou
 
 */
 
-MakePassword("TempPassword")
 MakePassword("Pizzarolls123")
-
 
 var enteredpassword = window.prompt("Enter Password: ","")
 
 function checkpassword(pass){
-    var tempnumber = 0
-    while (tempnumber < normalPasswords.length){
-        if(pass == normalPasswords[tempnumber]){
+    for (let i = 0; i < normalPasswords.length; i++) {
+        if pass == normalPasswords[i]{
             return "normal user"
         }
-        tempnumber = tempnumber + 1
     }
 }
 
