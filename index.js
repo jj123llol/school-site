@@ -1,4 +1,5 @@
 function create(url) {
+    document.title = "SDGJKRMSCIOSDJFOHELSDKGJ"
     var win = window.open();
     
     win.document.body.style.margin = '0';
