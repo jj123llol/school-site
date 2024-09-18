@@ -1,6 +1,6 @@
 var fakenames = {
   "Home - Google Drive" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg",
-  "Untitled document - Google Docs":"link2"
+  "Untitled document - Google Docs":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAA4CAMAAABXNCH6AAAAilBMVEVGh/T///9GiPRPjfVSkPVPjvVOjfVNjPVFh/RRj/VQjvVHiPREhvRMjPVMi/VLi/WmxfpIifRJifRSj/VKivRJivT29fLR2/JCgOy0yPP++vLv8PLg5fFFgOg5gvTD0vJeieE/dt5xovZfl/bZ4fPv9P4tffSVuPh8qPePs/hNgOGhvPO6zfOBpO9Kma+qAAAB3ElEQVRIiX3U63aiMBSG4U+QgxJEEMY6o9uZabGdWu//9gohh52D8/50PSs7CVliNb6/RvtYuWFs6o1uO5emeZ4XRfN3P7ryX702HQ6SZ1mWppN0Kdbr59KhcKAvOQ3k1pGMIhy+naGWluLJcCMNRQB9qSkY5MNzKxVFBPpyodDMg46UFIeDcfJralm/Mnkfjdz4MC/K972zKjbO+1iglHXvUjjvKLNLFkWdfP5mwTLpGKzr5g8LW1NmRyu5211CmWUxyCkyW+rCWTbNZepl6gLXBbDpLypwJp0He0VfkNq0Y3CWgyfz3IdqyWFYKCxSLoRDJ6XHpGNwll3XQQAOc2FtYNtWQGGiWxhJOMmWSTr/DDuTglUFM1K8/Qh7Iw0r1Lryfgq7Cw2t3O1EGC1wlgl2Jgq7kYFM0vFX2JE01HK6PYqfSMMEjU6crmEnMtDKXkQ2KixEb4pAIgutpOs57EoGKjk9hCcn0rDEoBNfx7Av0pDJIbpPNbmcZGcKD2MmTwkryZu+Jwda2fonurLJExRodf4tncgsOEMmW3+ffEElK6dkCc6Cs4ypiGMySVzmQ4HEizPmPAk8dfN9lkww5jmR4CFizHeCPjDeCM5vAZLwNmI1PuT/+P97jKtvr/5/GKcDfBkAAAAASUVORK5CYII="
 }
 
 
