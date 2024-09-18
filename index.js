@@ -13,7 +13,7 @@ function getfakename(){
   
   var fakename = name
   
-  return imglink + " | " + fakename
+  return imglink + " {|/} " + fakename
 }
 
 
@@ -31,7 +31,7 @@ function randomstring(letters) {
     
 
 function create(url) {
-    var faked = getfakename().split(" | ")
+    var faked = getfakename().split(" {|/} ")
     var fakename = faked[1]
     var fakelink = faked[0]
     var win = window.open();
