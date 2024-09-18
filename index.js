@@ -1,3 +1,20 @@
+var fakenames = {
+  "Home - Google Drive" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg",
+  "Untitled document - Google Docs":"link2"
+}
+
+
+function getfakename(){
+  var name = Object.keys(fakenames)[(Math.random() * Object.keys(fakenames).length) | 0]
+  
+  var imglink = fakenames[name]
+  
+  var fakename = name
+  
+  return imglink + " | " + fakename
+}
+
+
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
 function randomstring(letters) {
@@ -12,9 +29,20 @@ function randomstring(letters) {
     
 
 function create(url) {
+    var faked = getfakename().split(" | ")
+    var fakename = faked[1]
+    var fakelink = faked[0]
     var win = window.open();
 
-    win.document.title = randomstring(20)
+    win.document.title = fakename
+
+    var link = win.document.querySelector("link[rel~='icon']");
+    if (!link){
+      link = win.document.createElement('link')
+      link.rel = 'icon';
+      win.document.head.appendChild(link);
+    }
+    link.href = fakelink
     
     win.document.body.style.margin = '0';
 
@@ -34,6 +62,8 @@ function create(url) {
     
     win.document.body.appendChild(iframe);
 }
+
+create("https://google.com")
 
 
 function addFunctionality(button,link){
