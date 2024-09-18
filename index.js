@@ -64,9 +64,6 @@ function create(url) {
     win.document.body.appendChild(iframe);
 }
 
-create("https://google.com")
-
-
 function addFunctionality(button,link){
     document.getElementById(button).onclick = function() {
         create(link);
