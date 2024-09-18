@@ -1,6 +1,46 @@
+var alphabet = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
+
+function randomstring(letters){
+    var ind = 0
+    var string = ""
+    while ind < int(letters){
+        string = string + alphabet[(Math.floor(Math.random() * alphabet.length))]
+    }
+    return string
+}
+    
+
 function create(url) {
-    document.title = "SDGJKRMSCIOSDJFOHELSDKGJ"
     var win = window.open();
+
+    win.document.title = "SDGJKRMSCIOSDJFOHELSDKGJ"
     
     win.document.body.style.margin = '0';
 
