@@ -91,7 +91,7 @@ For Now Passwords Are Just So Random People Cant Get In   ( I Doubt Anyone At Ou
 
 */
 
-makePassword("Pizzarolls123")
+makePassword("Skill Issue")
 
 var enteredPassword = window.prompt("Enter Password: ","")
 
