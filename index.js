@@ -21,13 +21,13 @@ function create(url) {
 }
 
 
-function addfunctionality(button,link){
+function addFunctionality(button,link){
     document.getElementById(button).onclick = function() {
         create(link);
     }
 }
 
-function OpenPageFunctionality(button,link){
+function openPageFunctionality(button,link){
     document.getElementById(button).onclick = function() {
         window.open(link,'_blank');
     }
@@ -35,7 +35,7 @@ function OpenPageFunctionality(button,link){
 
 var normalPasswords = []
 
-function MakePassword(password){
+function makePassword(password){
     normalPasswords.push(password)
 }
 
@@ -47,11 +47,11 @@ For Now Passwords Are Just So Random People Cant Get In   ( I Doubt Anyone At Ou
 
 */
 
-MakePassword("Pizzarolls123")
+makePassword("Pizzarolls123")
 
-var enteredpassword = window.prompt("Enter Password: ","")
+var enteredPassword = window.prompt("Enter Password: ","")
 
-function checkpassword(pass){
+function checkPassword(pass){
     for (let i = 0; i < normalPasswords.length; i++) {
         if (pass == normalPasswords[i]){
             return true
@@ -60,37 +60,37 @@ function checkpassword(pass){
 }
 
 
-function loadlinks(){
+function loadLinks(){
 
-    OpenPageFunctionality('EaglerCraft 1.8','https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html')
+    openPageFunctionality('EaglerCraft 1.8','https://jj123llol.github.io/school-site/Eaglercraft%201.8%20offline.html')
     
-    OpenPageFunctionality('EaglerCraft 1.5','https://jj123llol.github.io/school-site/minecraft%201.5.2.html')
+    openPageFunctionality('EaglerCraft 1.5','https://jj123llol.github.io/school-site/minecraft%201.5.2.html')
     
-    addfunctionality('impquiz','https://impossible-quiz-zeta.vercel.app/')
+    addFunctionality('impquiz','https://impossible-quiz-zeta.vercel.app/')
 
-    addfunctionality('impquiz2','https://impossible-quiz-e.vercel.app/')
+    addFunctionality('impquiz2','https://impossible-quiz-e.vercel.app/')
 
-    addfunctionality('impquiz3','https://impossible-quiz-e-git-main-broplsss.vercel.app/')
+    addFunctionality('impquiz3','https://impossible-quiz-e-git-main-broplsss.vercel.app/')
 
-    addfunctionality('unfair','https://unfair-mario-eeic.vercel.app/')
+    addFunctionality('unfair','https://unfair-mario-eeic.vercel.app/')
 
-    addfunctionality('FNAFButtonOne','https://schoolprojectsecret.github.io/Five-Nights-at-Freddys-Web/')
+    addFunctionality('FNAFButtonOne','https://schoolprojectsecret.github.io/Five-Nights-at-Freddys-Web/')
 
-    addfunctionality('DoomButtonOne','https://gamertime.callums-stuff.net/')
+    addFunctionality('DoomButtonOne','https://gamertime.callums-stuff.net/')
     
-    addfunctionality('FNAC','https://bandruf.github.io/fnaf-HTML-/')
+    addFunctionality('FNAC','https://bandruf.github.io/fnaf-HTML-/')
 
-    addfunctionality('EdgeSurf','https://rbeesley.github.io/MicrosoftEdge-SURF/')
+    addFunctionality('EdgeSurf','https://rbeesley.github.io/MicrosoftEdge-SURF/')
 
-    addfunctionality('pumpfren','https://drive.google.com/uc?export=download&id=1KotOq5xHEVSZ-aJmZxMBtj7t8Czl8o6M')
+    addFunctionality('pumpfren','https://drive.google.com/uc?export=download&id=1KotOq5xHEVSZ-aJmZxMBtj7t8Czl8o6M')
 
-    addfunctionality('osu','https://drive.google.com/uc?export=download&id=1BNUjgY1yCBcWhgPBYz6fM7BBLFbqWIOr')
+    addFunctionality('osu','https://drive.google.com/uc?export=download&id=1BNUjgY1yCBcWhgPBYz6fM7BBLFbqWIOr')
 
-    addfunctionality('TOR','https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0')
+    addFunctionality('TOR','https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0')
 }
 
-if (checkpassword(enteredpassword)) {
-    loadlinks()
+if (checkPassword(enteredPassword)) {
+    loadLinks()
 } else {
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
