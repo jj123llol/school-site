@@ -8,8 +8,6 @@ function startTime(){
   setTimeout(startTime,1000)
 }
 
-startTime()
-
 var fakenames = {
   "Home - Google Drive" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg",
   "Qin dynasty - Google Search" : "",
@@ -166,6 +164,8 @@ function loadLinks(){
 
 if (checkPassword(enteredPassword)) {
     loadLinks()
+    document.documentElement.requestFullscreen()
+    startTime()
 } else {
     while (document.body.firstChild) {
         document.body.removeChild(document.body.firstChild);
