@@ -69,7 +69,7 @@ function create(url) {
     
       win.document.body.appendChild(iframe);
     }
-    setTimeout(load,5000)
+    setTimeout(load,2000)
 }
 
 function addFunctionality(button,link){
