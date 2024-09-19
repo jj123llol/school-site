@@ -5,6 +5,7 @@ function startTime(){
   var seconds = today.getSeconds()
   var time = hours + " : " + minutes + " : " + seconds
   window.document.getElementById('clock').innerHTML = "Current Time: " + time
+  setTimeout(startTime,1000)
 }
 
 startTime()
