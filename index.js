@@ -68,10 +68,10 @@ function create(url) {
       var iframe = win.document.createElement('iframe');
 
       iframe.id = "IFRAME"
+	    
+      iframe.name = "IFRAME"
     
       iframe.style.border = 'none';
-
-      iframe.name = "Important"
     
       iframe.style.width = '100%';
     
@@ -86,7 +86,7 @@ function create(url) {
     setTimeout(load,2000)
 }
 
-if (document.getElementById('IFRAME')){
+if (window.document.getElementById('IFRAME') || window.document.getElementById('IFRAME')){
 	console.log("Found")
 }else{
   create('https://jj123llol.github.io/school-site/')
