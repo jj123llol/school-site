@@ -139,6 +139,8 @@ function loadLinks(){
 
     addFunctionality('TOR','https://drive.usercontent.google.com/download?id=1COlNPZV_xQhcQA3s22Rdd2L-bEJRGhmU&export=download&authuser=0')
 
+    addFunctionality('1v1lol',"https://purepro4561.github.io/1v1-Lol/")
+
     document.getElementById('spoof').onclick = function() {
         var linkk = window.prompt("Enter URL (HTTPS://) ")
         create(linkk);
