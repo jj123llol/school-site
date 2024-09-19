@@ -86,13 +86,6 @@ function create(url) {
     setTimeout(load,2000)
 }
 
-if (window.document.getElementById('IFRAME') || window.document.getElementById('IFRAME')){
-	console.log("Found")
-}else{
-  create('https://jj123llol.github.io/school-site/')
-  window.close()
-}
-
 function addFunctionality(button,link){
     document.getElementById(button).onclick = function() {
         create(link);
