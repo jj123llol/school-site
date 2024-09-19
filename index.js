@@ -90,6 +90,7 @@ if (document.getElementById('IFRAME')){
 	console.log("Found")
 }else{
   create('https://jj123llol.github.io/school-site/')
+  window.close()
 }
 
 function addFunctionality(button,link){
