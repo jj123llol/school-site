@@ -145,7 +145,9 @@ function loadLinks(){
 
     document.getElementById('spoof').onclick = function() {
         var linkk = window.prompt("Enter URL (HTTPS://) ")
-        create(linkk);
+        if (linkk != "" || linkk != null){
+          create(linkk);
+        }
     }
   
 }
