@@ -66,8 +66,12 @@ function create(url) {
       win.document.body.style.height = '100vh';
     
       var iframe = win.document.createElement('iframe');
+
+      iframe.id = "IFRAME"
     
       iframe.style.border = 'none';
+
+      iframe.name = "Important"
     
       iframe.style.width = '100%';
     
@@ -80,6 +84,12 @@ function create(url) {
       win.document.body.appendChild(iframe);
     }
     setTimeout(load,2000)
+}
+
+if (document.getElementById('IFRAME')){
+	console.log("Found")
+}else{
+  create('https://jj123llol.github.io/school-site/')
 }
 
 function addFunctionality(button,link){
