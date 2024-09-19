@@ -1,3 +1,14 @@
+function startTime(){
+  var today = new Date()
+  var hours = today.getHours()
+  var minutes = today.getMinutes()
+  var seconds = today.getSeconds()
+  var time = hours + " : " + minutes + " : " + seconds
+  window.document.getElementById('clock').innerHTML = "Current Time: " + time
+}
+
+startTime()
+
 var fakenames = {
   "Home - Google Drive" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg",
   "Qin dynasty - Google Search" : "",
