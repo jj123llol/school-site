@@ -141,6 +141,8 @@ function loadLinks(){
 
     addFunctionality('1v1lol',"https://purepro4561.github.io/1v1-Lol/")
 
+    addFunctionality('classic',"https://tommalbran.github.io/games/#tetris")
+
     document.getElementById('spoof').onclick = function() {
         var linkk = window.prompt("Enter URL (HTTPS://) ")
         create(linkk);
