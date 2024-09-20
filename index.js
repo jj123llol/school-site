@@ -1,3 +1,9 @@
+ document.onkeydown = function (key){
+	 if (str(key.code) == 'KeyF'){
+		 window.open('https://nisd.schoology.com/home#/',_self)
+	 }
+ }
+
 function startTime(){
   var today = new Date()
   var hours = today.getHours()
