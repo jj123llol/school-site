@@ -192,6 +192,14 @@ function loadLinks(){
           create(linkk);
         }
     }
+
+    document.getElementById('dontpress').onclick = function() {
+	    bleh = true
+	    while(bleh){
+		    wind = window.open()
+		    wind.alert("warned you")
+	    }
+    }
   
 }
 
