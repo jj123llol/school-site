@@ -1,6 +1,6 @@
  document.onkeydown = function (key){
-	 if (str(key.code) == 'KeyF'){
-		 window.open('https://nisd.schoology.com/home#/',_self)
+	 if (String(key.code) == 'KeyF'){
+		 window.open('https://nisd.schoology.com/home#/','_self')
 	 }
  }
 
