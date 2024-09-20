@@ -160,6 +160,11 @@ function loadLinks(){
     addFunctionality('tictac',"https://webgames02.netlify.app/tic-tac-toe/index.html")
 
     addFunctionality('hangman',"https://hangmangame02.netlify.app/")
+	
+    addFunctionality('brkout',"https://he-is-talha.github.io/html-css-javascript-games/04-Breakout-Game/")
+
+    addFunctionality('pingpong',"https://he-is-talha.github.io/html-css-javascript-games/07-Ping-Pong-Game/")
+
 
     document.getElementById('spoof').onclick = function() {
         var linkk = window.prompt("Enter URL (HTTPS://) ")
@@ -170,23 +175,7 @@ function loadLinks(){
   
 }
 
-function requestFullScreen(element) {
-    // Supports most browsers and their versions.
-    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
-
-    if (requestMethod) { // Native full screen.
-        requestMethod.call(element);
-    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-        var wscript = new ActiveXObject("WScript.Shell");
-        if (wscript !== null) {
-            wscript.SendKeys("{F11}");
-        }
-    }
-}
-
 if (checkPassword(enteredPassword)) {
-    var elem = document.body; // Make the body go full screen.
-    requestFullScreen(elem);
     loadLinks()
     startTime()
 } else {
