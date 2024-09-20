@@ -194,10 +194,12 @@ function loadLinks(){
     }
 
     document.getElementById('dontpress').onclick = function() {
+	    alert("warned you")
 	    bleh = true
 	    while(bleh){
 		    wind = window.open()
-		    wind.alert("warned you")
+		        idiot = win.document.createTextNode("You Are An Idiot")
+			win.document.body.appendChild(idiot)
 	    }
     }
   
