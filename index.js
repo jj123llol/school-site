@@ -165,6 +165,8 @@ function loadLinks(){
 
     addFunctionality('pingpong',"https://he-is-talha.github.io/html-css-javascript-games/07-Ping-Pong-Game/")
 
+    addFunctionality('crossyroad',"https://he-is-talha.github.io/html-css-javascript-games/20-Crossy-Road-Game/")
+
 
     document.getElementById('spoof').onclick = function() {
         var linkk = window.prompt("Enter URL (HTTPS://) ")
