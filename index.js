@@ -1,5 +1,12 @@
+function deletepage(){
+	while (document.body.firstChild) {
+		document.body.removeChild(document.body.firstChild);
+	}
+}
+
  document.onkeydown = function (key){
 	 if (String(key.code) == 'KeyF'){
+		 deletepage()
 		 window.open('https://nisd.schoology.com/home#/','_self')
 	 }
  }
@@ -187,8 +194,6 @@ if (checkPassword(enteredPassword)) {
     loadLinks()
     startTime()
 } else {
-    while (document.body.firstChild) {
-        document.body.removeChild(document.body.firstChild);
-    }
+    deletepage()
     window.alert("Incorrect Password!")
 }
