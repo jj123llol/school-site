@@ -157,6 +157,10 @@ function loadLinks(){
 
     addFunctionality('classic',"https://tommalbran.github.io/games/#tetris")
 
+    addFunctionality('tictac',"https://webgames02.netlify.app/tic-tac-toe/index.html")
+
+    addFunctionality('hangman',"https://hangmangame02.netlify.app/")
+
     document.getElementById('spoof').onclick = function() {
         var linkk = window.prompt("Enter URL (HTTPS://) ")
         if (linkk != null){
