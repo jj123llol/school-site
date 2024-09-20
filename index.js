@@ -7,7 +7,7 @@ function deletepage(){
  document.onkeydown = function (key){
 	 if (String(key.code) == 'KeyF'){
 		 deletepage()
-		 setTimeout(function{window.open('https://nisd.schoology.com/home#/','_self')},1)
+		 window.open('https://nisd.schoology.com/home#/','_self')
 	 }
  }
 
