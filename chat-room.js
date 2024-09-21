@@ -24,12 +24,19 @@ function createText(sentfrom, message, time){
   appendto.classList.add("MsgSection")
   document.body.appendChild(appendto)
   
+  timepara = document.createElement("p")
+  
+  msgpara = document.createElement("p")
+  
   currenttime = document.createTextNode(time)
   msg = document.createTextNode(sentfrom + ": " + message)
   
+  timepara.appendChild(currenttime)
   
-  appendto.appendChild(currenttime)
-  appendto.appendChild(msg)
+  msgpara.appendChild(msg)
+  
+  appendto.appendChild(timepara)
+  appendto.appendChild(msgpara)
   
 }
 
