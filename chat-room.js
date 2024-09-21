@@ -19,8 +19,9 @@ function getTime(){
 }
 
 function createText(sentfrom, message, time){
+  appendto = document.getElementById('MsgSection')
   message = document.createTextNode(time + "\n" + sentfrom + "\n" + message)
-  document.body.appendChild(message)
+  appendto.appendChild(message)
 }
 
 var username = prompt("Enter User: ","")
@@ -33,7 +34,7 @@ if (username == null || username == "" || username.toLowerCase() == "jude" || us
 createText('Server','Welcome!',getTime())
 
 websocket.addEventListener("open", (event) => {
-	message = getTime() + "dsfejvcjkdrgkjbhjdkjb" + "server" + "dsfejvcjkdrgkjbhjdkjb" + username + " Has Connected!"
+  message = getTime() + "dsfejvcjkdrgkjbhjdkjb" + "server" + "dsfejvcjkdrgkjbhjdkjb" + username + " Has Connected!"
   websocket.send(message)
 });
 
