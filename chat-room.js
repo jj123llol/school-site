@@ -1,5 +1,6 @@
 function getTime(){
   var time = new Date().getHours() + ":" + new Date().getMinutes + ":" + new Date().getSeconds
+  return time
 }
 
 function createText(sentfrom, message, time){
