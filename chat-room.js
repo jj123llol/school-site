@@ -1,6 +1,6 @@
 function getTime(){
   today = new Date()
-  var time = today.getHours() + ":" + today.getMinutes + ":" + today.getSeconds
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
   return time
 }
 
