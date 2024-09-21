@@ -1,3 +1,5 @@
+const websocket = new WebSocket("wss://ws.postman-echo.com/raw")
+
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
 function randomstring(letters) {
@@ -21,9 +23,19 @@ function createText(sentfrom, message, time){
   document.body.appendChild(message)
 }
 
-var name = prompt("Enter User: ","")
+var username = prompt("Enter User: ","")
 
-if (name == null || name == ""){
-  name = randomstring(10)
+if (username == null || username == "" || username.toLowerCase() == "jude"){
+  username = randomstring(10)
 }
+
+
 createText('Server','Welcome!',getTime())
+
+websocket.addEventListener("open", (event) => {
+  websocket.send(username + " Has Connected!");
+});
+
+websocket.addEventListener("message", (event) => {
+  createText("Message from server ", event.data);
+});
