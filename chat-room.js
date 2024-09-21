@@ -21,7 +21,9 @@ function getTime(){
 function createText(sentfrom, message, time){
 	
   appendto = document.createElement("div")
+  
   appendto.classList.add("MsgSection")
+
   document.body.appendChild(appendto)
   
   timepara = document.createElement("p")
@@ -62,3 +64,10 @@ websocket.addEventListener("message", (event) => {
   message = split[2]
   createText(sentby, message, timesent)
 });
+
+ document.onkeydown = function (key){
+	 if (String(key.code) == 'Enter'){
+   		websocket.send(getTime() + "dsfejvcjkdrgkjbhjdkjb" +username + "dsfejvcjkdrgkjbhjdkjb" + document.getElementById('TextIn').value)
+      document.getElementById('TextIn').value = ""
+	 }
+ }
