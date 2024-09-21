@@ -19,9 +19,18 @@ function getTime(){
 }
 
 function createText(sentfrom, message, time){
-  appendto = document.getElementById('MsgSection')
-  message = document.createTextNode(time + "\n" + sentfrom + "\n" + message)
-  appendto.appendChild(message)
+	
+  appendto = document.createElement("div")
+  appendto.classList.add("MsgSection")
+  document.body.appendChild(appendto)
+  
+  currenttime = document.createTextNode(time)
+  msg = document.createTextNode(sentfrom + ": " + message)
+  
+  
+  appendto.appendChild(currenttime)
+  appendto.appendChild(msg)
+  
 }
 
 var username = prompt("Enter User: ","")
