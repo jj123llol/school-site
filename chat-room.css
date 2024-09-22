@@ -16,3 +16,11 @@ body {
     text-align: center;
     padding: 10px;
 }
+
+InPut {
+    background-color: rgb(32, 32, 32);
+    font-family: Monaco, monospace;
+    text-align: center;
+    border-color: rgb(32,32,32);
+    color: rgba(255, 255, 255, 1);
+}
