@@ -64,7 +64,7 @@ function getCmds(){
   var stri = String(Object.keys(commands)[0])
 	while (tempn < Object.keys(commands).length){
   	if(tempn != 0){
-    	stri + ", " + String(Object.keys(commands)[tempn])
+    	stri = stri + ", " + String(Object.keys(commands)[tempn])
     }
     tempn = tempn + 1
   }
