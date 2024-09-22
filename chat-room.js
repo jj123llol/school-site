@@ -87,7 +87,9 @@ function getCmds(){
 
 var username = prompt("Enter User: ","")
 
-if (username == null || username == "" || username.toLowerCase() == "jude" || username.toLowerCase() == "server"){
+var userlength = username.split(' ').length
+
+if (username == null || username == "" || username.toLowerCase() == "jude" || username.toLowerCase() == "server" || userlength > 1){
   username = randomstring(10)
 }
 
