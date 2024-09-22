@@ -79,7 +79,7 @@ websocket.addEventListener("message", (event) => {
 			 var tempn = 0
 			 split = msg.slice(1).split(' ')
 			 while (tempn < Object.keys(commands).length){
-				 if (String(Object.keys(commands)[tempn]) == split[0]){
+				 if (String(Object.keys(commands)[tempn]) == String(split[0]).toLowerCase()){
          				command = String(Object.keys(commands)[tempn])
          				alert(commands[command])
          			}
