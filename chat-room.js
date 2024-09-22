@@ -68,6 +68,7 @@ function getCmds(){
     }
     tempn = tempn + 1
   }
+  return stri
 }
 
 var username = prompt("Enter User: ","")
