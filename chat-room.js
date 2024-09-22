@@ -1,5 +1,3 @@
-
-
 const websocket = new WebSocket("wss://ws.postman-echo.com/raw")
 
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
@@ -46,7 +44,7 @@ function createText(sentfrom, message, time){
 
 var prefix = "!"
 
-var commands = {
+const commands = {
 	"help" : function help(){createText("Server","Commands: help",getTime())}
 }
 
@@ -82,7 +80,8 @@ websocket.addEventListener("message", (event) => {
 			 split = msg.slice(1).split(' ')
 			 while (tempn < Object.keys(commands).length){
 				 if (String(Object.keys(commands)[tempn]) == split[0]){
-         				Object.keys(commands)[tempn]()
+         				command = String(Object.keys(commands)[tempn])
+         				alert(commands[command])
          			}
 			 }
 		 }
