@@ -1,3 +1,5 @@
+
+
 const websocket = new WebSocket("wss://ws.postman-echo.com/raw")
 
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
@@ -42,6 +44,12 @@ function createText(sentfrom, message, time){
   
 }
 
+var prefix = "!"
+
+var commands = {
+	"help" : function(){createText("Server","Commands: help",getTime())}
+}
+
 var username = prompt("Enter User: ","")
 
 if (username == null || username == "" || username.toLowerCase() == "jude" || username.toLowerCase() == "server"){
@@ -67,7 +75,21 @@ websocket.addEventListener("message", (event) => {
 
  document.onkeydown = function (key){
 	 if (String(key.code) == 'Enter'){
-   		websocket.send(getTime() + "dsfejvcjkdrgkjbhjdkjb" +username + "dsfejvcjkdrgkjbhjdkjb" + document.getElementById('TextIn').value)
-      document.getElementById('TextIn').value = ""
+   		msg = document.getElementById('TextIn').value
+      		document.getElementById('TextIn').value = ""
+		 if (msg.startsWith(prefix)){
+			 var tempn = 0
+			 split = msg.slice(1).split(' ')
+			 while (tempn < Object.keys(commands).length){
+				 if (String(Object.keys(commands)[tempn]) == split[0]){
+         				searchfor = String(Object.keys(commands)[tempn])
+         				func = Object.keys(searchfor)
+					func()
+         			}
+			 }
+		 }
+		 else{
+			 websocket.send(getTime() + "dsfejvcjkdrgkjbhjdkjb" +username + "dsfejvcjkdrgkjbhjdkjb" + msg)
+		 }
 	 }
  }
