@@ -44,7 +44,7 @@ function createText(sentfrom, message, time){
 
 var prefix = "!"
 
-const commands = {
+var commands = {
 	"help" : createText("Server","Commands: help",getTime())
 }
 
@@ -80,8 +80,9 @@ websocket.addEventListener("message", (event) => {
 			 split = msg.slice(1).split(' ')
 			 while (tempn < Object.keys(commands).length){
 				 if (String(Object.keys(commands)[tempn]) == String(split[0]).toLowerCase()){
-         				command = String(Object.keys(commands)[tempn])
-         				alert(commands[command])
+         				command = String(split[0]).toLowerCase()
+					alert(command)
+         				commands[command]()
          			}
 			 }
 		 }
