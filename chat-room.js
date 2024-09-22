@@ -44,9 +44,18 @@ function createText(sentfrom, message, time){
 
 var prefix = "!"
 
+var muted = []
+
 
 var commands = {
-	"help" : function helpcmd(){createText("Commands","help",getTime())}
+	"help" : {
+  	"args": 0,
+    "func": function helpcmd(){createText("Commands","help",getTime())}
+  },
+	"mute" : {
+  "args": 1,
+ 	'func': function mutecmd(person){createText('Server',"Muted " + person,getTime()); muted.push(person)}
+  }
 }
 
 var username = prompt("Enter User: ","")
@@ -57,6 +66,15 @@ if (username == null || username == "" || username.toLowerCase() == "jude" || us
 
 
 createText('Server','Welcome!',getTime())
+
+function isMuted(user){
+	tempnumb = 0
+  while (tempnumb < muted.length){
+  	if (muted[tempnumb] == user){
+    	return true
+    }
+  }
+}
 
 websocket.addEventListener("open", (event) => {
   message = getTime() + "dsfejvcjkdrgkjbhjdkjb" + "Server" + "dsfejvcjkdrgkjbhjdkjb" + username + " Has Connected!"
@@ -69,8 +87,19 @@ websocket.addEventListener("message", (event) => {
   timesent = split[0]
   sentby = split[1]
   message = split[2]
-  createText(sentby, message, timesent)
+  if(!isMuted(sentby)){
+  	createText(sentby, message, timesent)
+  }
 });
+
+function runcommand(command,split){
+	args = command.args
+  if (args == 0){
+  	command.func()
+  }else if(args == 1){
+  	command.func(split[1])
+  }
+}
 
  document.onkeydown = function (key){
 	 if (String(key.code) == 'Enter'){
@@ -82,7 +111,7 @@ websocket.addEventListener("message", (event) => {
 			 while (tempn < Object.keys(commands).length){
 				 if (String(Object.keys(commands)[tempn]) == String(split[0]).toLowerCase()){
          				command = String(split[0]).toLowerCase()
-         				commands[command]()
+         				runcommand(commands[command],split)
          			}
               tempn = tempn + 1
 			 }
