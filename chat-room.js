@@ -52,7 +52,7 @@ if (username == null || username == "" || username.toLowerCase() == "jude" || us
 createText('Server','Welcome!',getTime())
 
 websocket.addEventListener("open", (event) => {
-  message = getTime() + "dsfejvcjkdrgkjbhjdkjb" + "server" + "dsfejvcjkdrgkjbhjdkjb" + username + " Has Connected!"
+  message = getTime() + "dsfejvcjkdrgkjbhjdkjb" + "Server" + "dsfejvcjkdrgkjbhjdkjb" + username + " Has Connected!"
   websocket.send(message)
 });
 
