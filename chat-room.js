@@ -47,14 +47,26 @@ var prefix = "!"
 var muted = []
 
 
+
 var commands = {
 	"help" : {
   	"args": 0,
-    "func": function helpcmd(){createText("Commands","help",getTime())}
+    "func": function helpcmd(){createText("Commands",getCmds(),getTime())}
   },
 	"mute" : {
   "args": 1,
  	'func': function mutecmd(person){createText('Server',"Muted " + person,getTime()); muted.push(person)}
+  }
+}
+
+function getCmds(){
+	tempn = 0
+  var stri = String(Object.keys(commands)[0])
+	while (tempn < Object.keys(commands).length){
+  	if(tempn != 0){
+    	stri + ", " + String(Object.keys(commands)[tempn])
+    }
+    tempn = tempn + 1
   }
 }
 
