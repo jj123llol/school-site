@@ -51,16 +51,32 @@ var muted = []
 var commands = {
 	"help" : {
   	"args": 0,
+    "shown": "help",
     "func": function helpcmd(){createText("Commands",getCmds(),getTime())}
+  },
+  "prefix": {
+  	"args": 0,
+    "shown": "prefix",
+    "func": function prefixcmd(){createText("Server","Prefix: " + prefix,getTime())}
+  },
+  "setprefix":{
+  	"args": 1,
+    "shown": "setprefix (symbol)",
+    "func": function setprefixcmd(setto){
+    createText("Server","Set Prefix: " + setto,getTime())
+    prefix = setto
+    }
   },
 	"mute" : {
   		"args": 1,
+      "shown": "mute (user)",
  			'func': function mutecmd(person){
   				createText('Server',"Muted " + person,getTime());
     			muted.push(person)}
   		},
   "unmute" : {
   		"args": 1,
+      "shown": "unmute (user)",
     	'func': function unmutecmd(person){
     			createText('Server', "Unmuted " + person,getTime())
           tempn = 0
@@ -75,10 +91,10 @@ var commands = {
 
 function getCmds(){
 	tempn = 0
-  var stri = String(Object.keys(commands)[0])
+  var stri = commands[String(Object.keys(commands)[0])].shown
 	while (tempn < Object.keys(commands).length){
   	if(tempn != 0){
-    	stri = stri + ", " + String(Object.keys(commands)[tempn])
+    	stri = stri + ", " + commands[String(Object.keys(commands)[tempn])].shown
     }
     tempn = tempn + 1
   }
@@ -131,7 +147,6 @@ function runcommand(command,split){
 }
 
  document.onkeydown = function (key){
- 
 	 if (String(key.code) == 'Enter'){
    		msg = document.getElementById('TextIn').value
       		document.getElementById('TextIn').value = ""
