@@ -47,7 +47,7 @@ function createText(sentfrom, message, time){
 var prefix = "!"
 
 var commands = {
-	"help" : function help(){return createText("Server","Commands: help",getTime())}
+	"help" : function help(){createText("Server","Commands: help",getTime())}
 }
 
 var username = prompt("Enter User: ","")
