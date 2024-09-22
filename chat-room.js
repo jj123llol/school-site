@@ -54,8 +54,22 @@ var commands = {
     "func": function helpcmd(){createText("Commands",getCmds(),getTime())}
   },
 	"mute" : {
-  "args": 1,
- 	'func': function mutecmd(person){createText('Server',"Muted " + person,getTime()); muted.push(person)}
+  		"args": 1,
+ 			'func': function mutecmd(person){
+  				createText('Server',"Muted " + person,getTime());
+    			muted.push(person)}
+  		},
+  "unmute" : {
+  		"args": 1,
+    	'func': function unmutecmd(person){
+    			createText('Server', "Unmuted " + person,getTime())
+          tempn = 0
+          while(tempn < muted.length){
+          	if (person == muted[tempn]){
+            	muted.splice(tempn)
+            }
+          }
+    	}
   }
 }
 
