@@ -131,7 +131,7 @@ function runcommand(command,split){
 }
 
  document.onkeydown = function (key){
-  alert(key.code)
+ 
 	 if (String(key.code) == 'Enter'){
    		msg = document.getElementById('TextIn').value
       		document.getElementById('TextIn').value = ""
