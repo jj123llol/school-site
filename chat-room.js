@@ -45,7 +45,7 @@ function createText(sentfrom, message, time){
 var prefix = "!"
 
 const commands = {
-	"help" : function help(){createText("Server","Commands: help",getTime())}
+	"help" : createText("Server","Commands: help",getTime())
 }
 
 var username = prompt("Enter User: ","")
