@@ -44,12 +44,9 @@ function createText(sentfrom, message, time){
 
 var prefix = "!"
 
-function helpcmd(){
-	createText("Server","Commands: help",getTime())
-}
 
 var commands = {
-	"help" : helpcmd()
+	"help" : function helpcmd(){createText("Server","Commands: help",getTime())}
 }
 
 var username = prompt("Enter User: ","")
@@ -85,9 +82,9 @@ websocket.addEventListener("message", (event) => {
 			 while (tempn < Object.keys(commands).length){
 				 if (String(Object.keys(commands)[tempn]) == String(split[0]).toLowerCase()){
          				command = String(split[0]).toLowerCase()
-					alert(command)
          				commands[command]()
          			}
+              tempn = tempn + 1
 			 }
 		 }
 		 else{
