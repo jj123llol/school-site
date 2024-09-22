@@ -46,7 +46,7 @@ var prefix = "!"
 
 
 var commands = {
-	"help" : function helpcmd(){createText("Server","Commands: help",getTime())}
+	"help" : function helpcmd(){createText("Commands","help",getTime())}
 }
 
 var username = prompt("Enter User: ","")
