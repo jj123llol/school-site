@@ -47,7 +47,7 @@ function createText(sentfrom, message, time){
 var prefix = "!"
 
 var commands = {
-	"help" : function(){createText("Server","Commands: help",getTime())}
+	"help" : function help(){return createText("Server","Commands: help",getTime())}
 }
 
 var username = prompt("Enter User: ","")
@@ -82,9 +82,7 @@ websocket.addEventListener("message", (event) => {
 			 split = msg.slice(1).split(' ')
 			 while (tempn < Object.keys(commands).length){
 				 if (String(Object.keys(commands)[tempn]) == split[0]){
-         				searchfor = String(Object.keys(commands)[tempn])
-         				func = Object.keys(searchfor)
-					func()
+         				Object.keys(commands)[tempn]()
          			}
 			 }
 		 }
