@@ -54,6 +54,11 @@ var commands = {
     "shown": "help",
     "func": function helpcmd(){createText("Commands",getCmds(),getTime())}
   },
+	"cmds" : {
+  		"args": 0,
+    		 "shown": "",
+   		 "func": function helpcmd(){createText("Commands",getCmds(),getTime())}
+  },
   "prefix": {
   	"args": 0,
     "shown": "prefix",
