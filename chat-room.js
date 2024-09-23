@@ -1,5 +1,6 @@
 const websocket = new WebSocket("wss://ws.postman-echo.com/raw")
 
+
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
 function randomstring(letters) {
@@ -56,7 +57,7 @@ var commands = {
   },
 	"cmds" : {
   		"args": 0,
-    		 "shown": "",
+    	"shown": "",
    		 "func": function helpcmd(){createText("Commands",getCmds(),getTime())}
   },
   "prefix": {
@@ -125,6 +126,10 @@ function isMuted(user){
     }
   }
 }
+
+websocket.addEventListener("close", (event) => {
+	createText('Server',"Disconnected, Please Refresh Page",getTime())
+});
 
 websocket.addEventListener("open", (event) => {
   message = getTime() + "dsfejvcjkdrgkjbhjdkjb" + "Server" + "dsfejvcjkdrgkjbhjdkjb" + username + " Has Connected!"
