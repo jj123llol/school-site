@@ -1,3 +1,15 @@
+/* 
+FOR NISD:
+
+In No Way Does This Website Break The Policy You Had Us Sign, Labeling It As Such Would Be Incorrect, 
+The Student Who Made This Put Effort Into This And You Should Instead Be Proud.
+
+
+
+
+*/
+
+
 function setclipboard(text){
 	navigator.clipboard.writeText(text)
 }
